@@ -2,6 +2,7 @@
   (:require [clojure.string :as string :refer [split join]])
   )
 
+;branch-test-v1
 
 ; James Vu - Module 1 Challenge 1: Implement a function to count how many times a given character appears in a given word.
 (defn count-character [word, letter]
