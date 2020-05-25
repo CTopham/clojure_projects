@@ -73,6 +73,26 @@
 (temperature-converter 35)
 ;------------------------------module 2------------------------------------------------
 
+;;Drake Ellis: Week 0 Challenge 1
+(defn temperature-converter [fahrenheit]
+  ;;@TODO
+  ;; Write a function that converts a temperature in Fahrenheit to Celsius.
+  (let [a (- fahrenheit 32)
+        b (* a 5)
+        result (/ b 9)]
+    result)
+  )
+
+;;Drake Ellis: Week 0 Challenge 3
+(defn random-number [n]
+  ;; @TODO
+  ;; Without using any built in Clojure commands, write a function that will return a random
+  ;; integer from 0 to n.
+  (rand-int n)
+  )
+
+;--------------- module 2-----------------------------
+
 (def grades [
              {:name "Jeffery" :exam1 55 :exam2 60 :exam3 80}
              {:name "Troy" :exam1 65 :exam2 70 :exam3 80}
