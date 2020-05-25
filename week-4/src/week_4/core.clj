@@ -43,7 +43,33 @@
     (< (count str1) (count str2)) -1
     ))
 
+;;Ryan Boyce: Week 1 challenge 2
+(defn prime-num
+  [num]
+  ;;@TODO
+  ;;Return all primes in a list of number
+  (filter #(not= 0 (rem %1 2)) num))
 
+
+;;Drake Ellis: Week 0 Challenge 1
+(defn temperature-converter [fahrenheit]
+  ;;@TODO
+  ;; Write a function that converts a temperature in Fahrenheit to Celsius.
+  (let [a (- fahrenheit 32)
+        b (* a 5)
+        result (/ b 9)]
+    result)
+  )
+
+;;Drake Ellis: Week 0 Challenge 3
+(defn random-number [n]
+  ;; @TODO
+  ;; Without using any built in Clojure commands, write a function that will return a random
+  ;; integer from 0 to n.
+  (rand-int n)
+  )
+
+;--------------- module 2-----------------------------
 
 (def grades [
              {:name "Jeffery" :exam1 55 :exam2 60 :exam3 80}
@@ -87,14 +113,6 @@
 (class-average grades)
 
 
-;;Ryan Boyce: Week 1 challenge 2
-(defn prime-num
-  [num]
-  ;;@TODO
-  ;;Return all primes in a list of number
-  (filter #(not= 0 (rem %1 2)) num))
-
-  (prime-num [1 2 3])
 ;---------my questions week 4-----------------------comp, protocol, integrant, reduce, partial
 
 (def friends {:bob {:age 40 :type "best"} :jessica {:age 29 :type "funny"} :adam {:age 36 :type "peer"}})
