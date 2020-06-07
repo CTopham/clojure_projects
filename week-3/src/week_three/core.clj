@@ -30,3 +30,18 @@
 (= '(3 5) (inc-add [1 2 ] 2))
 (= '((1 3) (2 4)) (coll-div [1 2 3 4] 2 ))
  (= "erehtolleh" (reverse-concat "hello" "there"))
+
+
+;-------- project tests --------
+
+
+(defn answer [text]
+  text
+  )
+
+(defn question [text]
+  (answer text)
+  )
+
+(question "test")
+

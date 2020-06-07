@@ -43,7 +43,7 @@
 ;======================partials======================
 ;The partial function takes a function and fewer than the normal arguments to the function,
 ; and returns a function that takes a variable number of additional args.
-;you can use this to attach a static arg to function
+;you can use this to attach a static arg to function.
 (def hundred-times (partial * 100))
 (hundred-times 2 2 2)
 
